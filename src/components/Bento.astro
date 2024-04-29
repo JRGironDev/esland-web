@@ -28,14 +28,49 @@ import BentoItem from './BentoItem.astro'
     <BentoItem 
         class="col-span-10 md:col-span-6" 
         title="LA ALFOMBRA BLANCA" 
-        subtitle="16 de febrero de 2024"/>
+        subtitle="16 de febrero de 2024">
+        <div
+        slot="image"
+        class="
+            absolute left-0 top-0 bottom-0 opacity-90 -z-10
+            bg-center bg-cover bg-no-repeat bg-blue-800 bg-blend-luminosity
+            w-full h-full group-hover:scale-110 transition-scale duration-1000 ease-in-out
+        "
+        style="background-image: url('/grefg.webp')">
+        </div>
+
+        <p slot="content" class="max-w-xl"><strong>Uno de los días más esperados del año</strong> en la comunidad hispanohablante, <strong>con dos grandes hitos concentrados en un mismo directo</strong>. Una alfombra por la que pasarán los <strong>mejores streamers del año</strong>, luciendo sus mejores galas, momentos antes de saber si son los premiados.</p>
+    </BentoItem>
 
     <BentoItem 
         class="col-span-10 md:col-span-6" 
         title="LA GALA" 
-        subtitle="17 de febrero de 2024"/>
+        subtitle="17 de febrero de 2024">
+        <div
+        slot="image"
+        class="
+            absolute left-0 top-0 bottom-0 opacity-90 -z-10
+            bg-center bg-cover bg-no-repeat bg-blue-900 bg-blend-luminosity
+            w-full h-full group-hover:scale-110 transition-scale duration-1000 ease-in-out
+        "
+        style="background-image: url('/pistas.webp')">
+        </div>
+
+        <p slot="content" class="max-w-xl">Y una gala llena de emoción, con la entrega de premios, conciertos de artistas internacionales, y una gran cantidad de contenido pensado exclusivamente para la comunidad de streaming hispanohablante.</p>
+    </BentoItem>
 
     <BentoItem 
         class="col-span-10 md:col-span-4" 
-        title="DISFRUTA DEL REDDIT DE LA COMUNIDAD"/>
+        title="DISFRUTA DEL REDDIT DE LA COMUNIDAD">
+        <div
+        slot="image"
+        class="
+            absolute left-0 top-0 bottom-0 opacity-90 -z-10
+            bg-center bg-cover bg-no-repeat bg-blue-950 bg-blend-luminosity
+            w-full h-full group-hover:scale-110 transition-scale duration-1000 ease-in-out
+        "
+        style="background-image: url('/laptop.webp')">
+        </div>
+        <p slot="content" class="max-w-xl">Este año, el reddit no formará parte de las votaciones de los premios, pero sí que <strong>formará parte de la comunidad</strong>. El subreddit oficial de los Premios ESLAND está abierto para ti, para que compartas tus clips, tus opiniones y para que <strong>interactúes con toda la comunidad</strong> del streaming hispanohablante.</p>
+    </BentoItem>    
 </section>
